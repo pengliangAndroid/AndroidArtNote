@@ -20,7 +20,6 @@
             android:process="com.funny.ex.provider.BookProvider"/>
 
         <activity android:name=".chapter2.ProviderDataActivity">
-
         </activity>
         <activity android:name=".chapter2.PersonActivity">
         </activity>
@@ -35,22 +34,26 @@
             android:enabled="true"
             android:process=":remotem">
         </service>
-
         <service
             android:name=".chapter2.BinderPoolService"
             android:enabled="true"
             android:process=":remote">
         </service>
 
-
         <activity android:name=".chapter2.MessageActivity">
         </activity>
         <activity android:name=".chapter2.BinderPoolActivity">
+        </activity>
+        <activity android:name=".chapter3.ViewActivity">
+
+        </activity>
+        <activity android:name=".chapter3.ScrollActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
         </activity>
     </application>
 
