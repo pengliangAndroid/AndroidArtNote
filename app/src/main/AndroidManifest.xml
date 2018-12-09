@@ -46,6 +46,10 @@
         <activity android:name=".chapter2.MessageActivity">
         </activity>
         <activity android:name=".chapter2.BinderPoolActivity">
+
+        </activity>
+
+        <activity android:name=".chapter4.AnimActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
