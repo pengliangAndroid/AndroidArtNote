@@ -41,6 +41,11 @@ public class BinderPool {
         context.bindService(intent,serviceConnection,Context.BIND_AUTO_CREATE);
     }
 
+    public void disConnectService(){
+        if(serviceConnection != null)
+            context.unbindService(serviceConnection);
+    }
+
     ServiceConnection serviceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
